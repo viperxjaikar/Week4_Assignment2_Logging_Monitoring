@@ -1,0 +1,147 @@
+2026-06-21 19:08:39.699 [restartedMain] INFO  com.logging.LoggingMonitoringApplication - Starting LoggingMonitoringApplication using Java 17.0.18 with PID 5192 (C:\Users\jaika\Downloads\Week4_Assignment2_Logging_Monitoring\target\classes started by jaika in C:\Users\jaika\Downloads\Week4_Assignment2_Logging_Monitoring)
+2026-06-21 19:08:39.701 [restartedMain] DEBUG com.logging.LoggingMonitoringApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-21 19:08:39.702 [restartedMain] INFO  com.logging.LoggingMonitoringApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-21 19:08:42.459 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-21 19:08:42.465 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-21 19:08:42.466 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-21 19:08:42.564 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-21 19:08:43.314 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-21 19:08:43.765 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@517c0153
+2026-06-21 19:08:43.768 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-21 19:08:43.865 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-21 19:08:46.261 [restartedMain] DEBUG com.logging.audit.RequestLoggingFilter - Filter 'requestLoggingFilter' configured for use
+2026-06-21 19:08:46.496 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-21 19:08:47.368 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-21 19:08:47.412 [restartedMain] INFO  com.logging.LoggingMonitoringApplication - Started LoggingMonitoringApplication in 8.268 seconds (process running for 8.861)
+2026-06-21 19:09:43.868 [http-nio-8081-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [g_state={"i_l":0,"i_ll":1774529020549,"i_b":"8THOE5nvEnP3Crf8cMMyICWt1AvtM7hJbHnxEHl88xk","i_e":{"enable_itp_optimization":0},"i_t":1774615420552}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-06-21 19:09:43.898 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-21 19:09:43.966 [http-nio-8081-exec-1] INFO  com.logging.audit.RequestLoggingFilter - >>> INCOMING REQUEST: GET / from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:09:44.070 [http-nio-8081-exec-1] ERROR com.logging.exception.GlobalExceptionHandler - Unexpected error occurred: No static resource .
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at com.logging.audit.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-06-21 19:09:44.213 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2026-06-21 19:09:44.217 [http-nio-8081-exec-1] INFO  com.logging.audit.RequestLoggingFilter - <<< RESPONSE: GET / -> Status: 500 | Time: 251ms
+2026-06-21 19:09:44.475 [http-nio-8081-exec-1] DEBUG com.logging.audit.AuditLogService - Audit log saved: GET / -> 500 (251ms)
+2026-06-21 19:09:46.235 [http-nio-8081-exec-2] INFO  com.logging.audit.RequestLoggingFilter - >>> INCOMING REQUEST: GET /favicon.ico from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:09:46.249 [http-nio-8081-exec-2] ERROR com.logging.exception.GlobalExceptionHandler - Unexpected error occurred: No static resource favicon.ico.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at com.logging.audit.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-06-21 19:09:46.262 [http-nio-8081-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-06-21 19:09:46.263 [http-nio-8081-exec-2] INFO  com.logging.audit.RequestLoggingFilter - <<< RESPONSE: GET /favicon.ico -> Status: 500 | Time: 28ms
+2026-06-21 19:09:46.290 [http-nio-8081-exec-2] DEBUG com.logging.audit.AuditLogService - Audit log saved: GET /favicon.ico -> 500 (28ms)
+2026-06-21 19:11:34.467 [http-nio-8081-exec-5] INFO  com.logging.audit.RequestLoggingFilter - >>> INCOMING REQUEST: GET /api/products from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:11:34.514 [http-nio-8081-exec-5] INFO  com.logging.controller.ProductController - GET /api/products - Fetching all products
+2026-06-21 19:11:34.524 [http-nio-8081-exec-5] INFO  com.logging.audit.LoggingAspect - ENTERING: com.logging.service.ProductService.getAllProducts() with args: []
+2026-06-21 19:11:34.525 [http-nio-8081-exec-5] DEBUG com.logging.service.ProductService - Fetching all products from database
+2026-06-21 19:11:34.975 [http-nio-8081-exec-5] INFO  com.logging.service.ProductService - Retrieved 0 products
+2026-06-21 19:11:34.976 [http-nio-8081-exec-5] INFO  com.logging.audit.LoggingAspect - EXITING: com.logging.service.ProductService.getAllProducts() with result: ArrayList
+2026-06-21 19:11:34.982 [http-nio-8081-exec-5] INFO  com.logging.audit.LoggingAspect - PERFORMANCE: com.logging.controller.ProductController.getAll() executed in 468ms
+2026-06-21 19:11:35.006 [http-nio-8081-exec-5] INFO  com.logging.audit.RequestLoggingFilter - <<< RESPONSE: GET /api/products -> Status: 200 | Time: 539ms
+2026-06-21 19:11:35.032 [http-nio-8081-exec-5] DEBUG com.logging.audit.AuditLogService - Audit log saved: GET /api/products -> 200 (539ms)
+2026-06-21 19:12:48.385 [http-nio-8081-exec-6] INFO  com.logging.audit.RequestLoggingFilter - >>> INCOMING REQUEST: POST /api/products from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:12:48.723 [http-nio-8081-exec-6] INFO  com.logging.controller.ProductController - POST /api/products - Creating product: Laptop
+2026-06-21 19:12:48.724 [http-nio-8081-exec-6] INFO  com.logging.audit.LoggingAspect - ENTERING: com.logging.service.ProductService.createProduct() with args: [com.logging.model.Product@47c29095]
+2026-06-21 19:12:48.726 [http-nio-8081-exec-6] INFO  com.logging.service.ProductService - Creating product: name=Laptop, category=Electronics, price=55000.0
+2026-06-21 19:12:48.756 [http-nio-8081-exec-6] INFO  com.logging.service.ProductService - Product created successfully with ID: 1
+2026-06-21 19:12:48.757 [http-nio-8081-exec-6] INFO  com.logging.audit.LoggingAspect - EXITING: com.logging.service.ProductService.createProduct() with result: Product
+2026-06-21 19:12:48.758 [http-nio-8081-exec-6] INFO  com.logging.audit.LoggingAspect - PERFORMANCE: com.logging.controller.ProductController.create() executed in 35ms
+2026-06-21 19:12:48.804 [http-nio-8081-exec-6] INFO  com.logging.audit.RequestLoggingFilter - <<< RESPONSE: POST /api/products -> Status: 201 | Time: 419ms
+2026-06-21 19:12:48.805 [http-nio-8081-exec-6] DEBUG com.logging.audit.RequestLoggingFilter - Request Body: {
+  "name":"Laptop",
+  "category":"Electronics",
+  "price":55000,
+  "stock":20
+}
+2026-06-21 19:12:48.820 [http-nio-8081-exec-6] DEBUG com.logging.audit.AuditLogService - Audit log saved: POST /api/products -> 201 (419ms)
+2026-06-21 19:13:47.143 [http-nio-8081-exec-8] INFO  com.logging.audit.LoggingAspect - PERFORMANCE: com.logging.controller.AuditLogController.getRecentLogs() executed in 63ms

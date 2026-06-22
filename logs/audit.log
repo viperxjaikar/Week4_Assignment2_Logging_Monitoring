@@ -1,0 +1,26 @@
+2026-06-21 19:08:46.261 [restartedMain] Filter 'requestLoggingFilter' configured for use
+2026-06-21 19:09:43.966 [http-nio-8081-exec-1] >>> INCOMING REQUEST: GET / from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:09:44.217 [http-nio-8081-exec-1] <<< RESPONSE: GET / -> Status: 500 | Time: 251ms
+2026-06-21 19:09:44.475 [http-nio-8081-exec-1] Audit log saved: GET / -> 500 (251ms)
+2026-06-21 19:09:46.235 [http-nio-8081-exec-2] >>> INCOMING REQUEST: GET /favicon.ico from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:09:46.263 [http-nio-8081-exec-2] <<< RESPONSE: GET /favicon.ico -> Status: 500 | Time: 28ms
+2026-06-21 19:09:46.290 [http-nio-8081-exec-2] Audit log saved: GET /favicon.ico -> 500 (28ms)
+2026-06-21 19:11:34.467 [http-nio-8081-exec-5] >>> INCOMING REQUEST: GET /api/products from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:11:34.524 [http-nio-8081-exec-5] ENTERING: com.logging.service.ProductService.getAllProducts() with args: []
+2026-06-21 19:11:34.976 [http-nio-8081-exec-5] EXITING: com.logging.service.ProductService.getAllProducts() with result: ArrayList
+2026-06-21 19:11:34.982 [http-nio-8081-exec-5] PERFORMANCE: com.logging.controller.ProductController.getAll() executed in 468ms
+2026-06-21 19:11:35.006 [http-nio-8081-exec-5] <<< RESPONSE: GET /api/products -> Status: 200 | Time: 539ms
+2026-06-21 19:11:35.032 [http-nio-8081-exec-5] Audit log saved: GET /api/products -> 200 (539ms)
+2026-06-21 19:12:48.385 [http-nio-8081-exec-6] >>> INCOMING REQUEST: POST /api/products from IP: 0:0:0:0:0:0:0:1
+2026-06-21 19:12:48.724 [http-nio-8081-exec-6] ENTERING: com.logging.service.ProductService.createProduct() with args: [com.logging.model.Product@47c29095]
+2026-06-21 19:12:48.757 [http-nio-8081-exec-6] EXITING: com.logging.service.ProductService.createProduct() with result: Product
+2026-06-21 19:12:48.758 [http-nio-8081-exec-6] PERFORMANCE: com.logging.controller.ProductController.create() executed in 35ms
+2026-06-21 19:12:48.804 [http-nio-8081-exec-6] <<< RESPONSE: POST /api/products -> Status: 201 | Time: 419ms
+2026-06-21 19:12:48.805 [http-nio-8081-exec-6] Request Body: {
+  "name":"Laptop",
+  "category":"Electronics",
+  "price":55000,
+  "stock":20
+}
+2026-06-21 19:12:48.820 [http-nio-8081-exec-6] Audit log saved: POST /api/products -> 201 (419ms)
+2026-06-21 19:13:47.143 [http-nio-8081-exec-8] PERFORMANCE: com.logging.controller.AuditLogController.getRecentLogs() executed in 63ms
